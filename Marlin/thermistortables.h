@@ -119,6 +119,9 @@
 #if ANY_THERMISTOR_IS(147) // Pt100 with 4k7 pullup
   #include "thermistortable_147.h"
 #endif
+#if ANY_THERMISTOR_IS(666) // Phillips Ender 3 Hotend Thermistor (Original: 100k Hisens 3950 Marlin-Code: 13)
+  #include "thermistortable_666.h"
+#endif
 #if ANY_THERMISTOR_IS(1010) // Pt1000 with 1k0 pullup
   #include "thermistortable_1010.h"
 #endif
