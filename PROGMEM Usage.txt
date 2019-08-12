@@ -1,0 +1,65 @@
+ //#define STRING_CONFIG_H_AUTHOR "(fiveangle@gmail.com)" // Who made the changes. // 220 bytes
+ //#define SHOW_BOOTSCREEN // 458 bytes
+ #define CUSTOM_MACHINE_NAME "Printrbot Metal" // 16 bytes
+ #define POWER_SUPPLY 0 // 0 bytes
+ //#define PREVENT_COLD_EXTRUSION // 1918 bytes
+ #define PREVENT_LENGTHY_EXTRUDE // 0 bytes
+ #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders // 448 bytes   // both of these together
+ #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed // 406 bytes  // saves 1522 bytes
+ //#define FIX_MOUNTED_PROBE // 2444 bytes over PROBE_MANUALLY
+ //#define PROBING_HEATERS_OFF       // Turn heaters off when probing // 156 bytes
+ //#define PROBING_FANS_OFF          // Turn fans off when probing // 16 bytes
+ //#define PROBE_DOUBLE_TOUCH / 0 bytes
+ #define DISABLE_REDUCED_ACCURACY_WARNING // -64 bytes
+ #define DISABLE_E false // For all extruders // 0 bytes
+ #define MIN_SOFTWARE_ENDSTOPS // 128 bytes
+ #define MAX_SOFTWARE_ENDSTOPS // 128 bytes // together with MINSOFTWARE_ENDSTOPS, uses 476 bytes
+ #define MAX_SOFTWARE_ENDSTOPS // 128 bytes // together with MINSOFTWARE_ENDSTOPS, uses 476 bytes
+ #define AUTO_BED_LEVELING_BILINEAR // 11534 bytes
+ //#define DEBUG_LEVELING_FEATURE // 3312 bytes
+   #define ENABLE_LEVELING_FADE_HEIGHT // 828 bytes
+   //#define PROBE_Y_FIRST // 0 bytes
+     //#define ABL_BILINEAR_SUBDIVISION // 1802 bytes
+ //#define LCD_BED_LEVELING // 2302 bytes
+ #define Z_SAFE_HOMING // 256 bytes
+ #define EEPROM_SETTINGS // 5268 bytes
+   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out
+   #define EEPROM_CHITCHAT // Please keep turned on if you can. // 86 bytes
+ #define HOST_KEEPALIVE_FEATURE      // Disable this if your host doesn't like keepalive messages // 626 bytes
+ //#define M100_FREE_MEMORY_WATCHER // uncomment to add the M100 Free Memory Watcher for debug purpose // 2578 bytes
+ //#define INCH_MODE_SUPPORT // 1126 bytes
+ //#define PRINTJOB_TIMER_AUTOSTART // 162 bytes
+ //#define PRINTCOUNTER // 2048 bytes
+ //#define SDSUPPORT // 18036 bytes
+ //#define INDIVIDUAL_AXIS_HOMING_MENU // 242 bytes
+ //#define FAST_PWM_FAN // 102 bytes
+ #define FAN_SOFT_PWM // 14 bytes
+ 
+ ***********************
+ * Config_Adv
+ ***********************
+ 
+  //#define AUTOTEMP // 2204 bytes
+ //#define SHOW_TEMP_ADC_VALUES // 122 bytes
+ //#define FAN_KICKSTART_TIME 200 // 116 bytes
+ //#define FAN_MIN_PWM 50 // 26 bytes
+ //#define HOME_Y_BEFORE_X // 0 bytes
+ #define HOME_AFTER_DEACTIVATE  // Require rehoming after steppers are deactivated // 0 bytes
+ #define SLOWDOWN // 166 bytes
+ //#define LCD_INFO_MENU // 1912 bytes
+ //#define STATUS_MESSAGE_SCROLLING // 248 bytes
+ //#define LCD_DECIMAL_SMALL_XY // 154 bytes
+   #define XYZ_HOLLOW_FRAME // 198 bytes
+   //#define MENU_HOLLOW_FRAME // 44 bytes
+   //#define USE_BIG_EDIT_FONT // 3094 bytes
+   //#define USE_SMALL_INFOFONT // 2300 bytes
+ //#define USE_WATCHDOG // 30 bytes
+ //#define BABYSTEPPING // 932 bytes
+ #define ARC_SUPPORT               // Disable this feature to save ~3226 bytes
+ // Support for G5 with XYZE destination and IJPQ offsets. Requires ~2666 bytes.
+ // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
+ #define ADVANCED_PAUSE_FEATURE // 6616 bytes
+ //#define AUTO_REPORT_TEMPERATURES // 290 bytes
+ #define EXTENDED_CAPABILITIES_REPORT // 474 bytes
+ #define NO_WORKSPACE_OFFSETS // -3146 bytes
+  * Spend 28 bytes of SRAM to optimize the GCode parser
