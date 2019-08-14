@@ -322,7 +322,7 @@
   #endif
 #endif
 
-//#define Z_DUAL_STEPPER_DRIVERS
+#define Z_DUAL_STEPPER_DRIVERS
 #if ENABLED(Z_DUAL_STEPPER_DRIVERS)
   //#define Z_DUAL_ENDSTOPS
   #if ENABLED(Z_DUAL_ENDSTOPS)
@@ -1182,7 +1182,7 @@
   #define E0_CURRENT         920
   #define E0_MICROSTEPS       16
 
-  #define E1_CURRENT         920
+  #define E1_CURRENT         800
   #define E1_MICROSTEPS       16
 
   #define E2_CURRENT         800
